@@ -1,5 +1,5 @@
 // CallStateListener.kt
-package ru.rostell
+package ru.loanexpert
 
 import android.content.Context
 import android.os.Handler
@@ -32,6 +32,6 @@ class CallStateListener(private val context: Context, private val forwardingNumb
     }
 
     companion object {
-        private const val TAG = "ru.rostellInfo"
+        private const val TAG = "ru.loanexpertInfo"
     }
 }

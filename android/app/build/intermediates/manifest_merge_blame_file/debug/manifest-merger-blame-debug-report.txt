@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="ru.rostell"
+3    package="ru.loanexpert"
 4    android:versionCode="6400"
 5    android:versionName="1.0" >
 6
@@ -72,12 +72,12 @@
 35
 36    <permission
 36-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-37        android:name="ru.rostell.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+37        android:name="ru.loanexpert.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 37-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 38        android:protectionLevel="signature" />
 38-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 39
-40    <uses-permission android:name="ru.rostell.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+40    <uses-permission android:name="ru.loanexpert.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 40-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
 40-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 41    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
@@ -86,7 +86,7 @@
 42
 43    <application
 43-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:16:3-46:17
-44        android:name="ru.rostell.MainApplication"
+44        android:name="ru.loanexpert.MainApplication"
 44-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:17:5-36
 45        android:allowBackup="false"
 45-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:21:5-32
@@ -108,7 +108,7 @@
 54-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\debug\AndroidManifest.xml:6:9-44
 55        <activity
 55-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:24:5-35:16
-56            android:name="ru.rostell.MainActivity"
+56            android:name="ru.loanexpert.MainActivity"
 56-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:25:7-35
 57            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
 57-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:27:7-116
@@ -134,7 +134,7 @@
 68
 69        <receiver
 69-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:36:5-41:16
-70            android:name="ru.rostell.CallRedirectReceiver"
+70            android:name="ru.loanexpert.CallRedirectReceiver"
 70-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:36:15-51
 71            android:exported="true" >
 71-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:37:7-30
@@ -148,7 +148,7 @@
 76
 77        <service
 77-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:42:5-45:40
-78            android:name="ru.rostell.CallListenerService"
+78            android:name="ru.loanexpert.CallListenerService"
 78-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:43:13-48
 79            android:enabled="true"
 79-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:44:13-35
@@ -169,7 +169,7 @@
 88-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 89            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
 89-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-83
-90            android:authorities="ru.rostell.fileprovider"
+90            android:authorities="ru.loanexpert.fileprovider"
 90-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-64
 91            android:exported="false"
 91-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
@@ -234,7 +234,7 @@
 125-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 126            android:name="androidx.startup.InitializationProvider"
 126-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-127            android:authorities="ru.rostell.androidx-startup"
+127            android:authorities="ru.loanexpert.androidx-startup"
 127-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
 128            android:exported="false" >
 128-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37

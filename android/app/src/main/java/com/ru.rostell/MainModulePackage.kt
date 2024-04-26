@@ -1,4 +1,4 @@
-package ru.rostell
+package ru.loanexpert
 
 import android.view.View
 import com.facebook.react.ReactPackage

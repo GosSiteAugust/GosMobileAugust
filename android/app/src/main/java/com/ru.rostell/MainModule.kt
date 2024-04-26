@@ -1,4 +1,4 @@
-package ru.rostell
+package ru.loanexpert
 
 import android.content.Context
 import android.content.Intent
@@ -45,6 +45,6 @@ class MainModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaMo
         callback.invoke(notes.toString())
     }
     companion object {
-            private const val TAG = "ru.rostellInfo"
+            private const val TAG = "ru.loanexpertInfo"
         }
 }

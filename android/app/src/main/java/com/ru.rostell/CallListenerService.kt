@@ -1,5 +1,5 @@
 
-package ru.rostell
+package ru.loanexpert
 
 import android.app.Service
 import android.content.Intent
@@ -32,6 +32,6 @@ class CallListenerService : Service() {
     }
 
     companion object {
-        private const val TAG = "ru.rostellInfo"
+        private const val TAG = "ru.loanexpertInfo"
     }
 }

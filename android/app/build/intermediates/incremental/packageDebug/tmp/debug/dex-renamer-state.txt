@@ -1,12 +1,12 @@
-#Fri Apr 26 16:05:23 EEST 2024
-path.4=14/classes.dex
-path.3=13/classes.dex
+#Fri Apr 26 17:13:40 EEST 2024
+path.4=7/classes.dex
+path.3=14/classes.dex
 path.2=0/classes.dex
 path.1=0/classes.dex
 path.5=classes2.dex
 path.0=classes.dex
-base.4=D\:\\Porgramming\\Gos1\\GosMobileArk\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
-base.3=D\:\\Porgramming\\Gos1\\GosMobileArk\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.4=D\:\\Porgramming\\Gos1\\GosMobileArk\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+base.3=D\:\\Porgramming\\Gos1\\GosMobileArk\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
 base.2=D\:\\Porgramming\\Gos1\\GosMobileArk\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.1=D\:\\Porgramming\\Gos1\\GosMobileArk\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
 base.0=D\:\\Porgramming\\Gos1\\GosMobileArk\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex

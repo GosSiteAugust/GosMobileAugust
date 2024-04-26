@@ -1,5 +1,5 @@
-package ru.rostell
-import ru.rostell.MainModulePackage
+package ru.loanexpert
+import ru.loanexpert.MainModulePackage
 import android.app.Application
 import android.content.Intent 
 import android.content.pm.PackageManager 

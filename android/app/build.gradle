@@ -74,9 +74,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "ru.rostell"
+    namespace "ru.loanexpert"
     defaultConfig {
-        applicationId "ru.rostell"
+        applicationId "ru.loanexpert"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 6400
