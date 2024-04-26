@@ -45,8 +45,6 @@ import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.horcrux.svg.SvgPackage;
 // react-native-webview
 import com.reactnativecommunity.webview.RNCWebViewPackage;
-// rn-fetch-blob
-import com.RNFetchBlob.RNFetchBlobPackage;
 
 public class PackageList {
   private Application application;
@@ -108,8 +106,7 @@ public class PackageList {
       new RNSimDataReactPackage(),
       new SplashScreenReactPackage(),
       new SvgPackage(),
-      new RNCWebViewPackage(),
-      new RNFetchBlobPackage()
+      new RNCWebViewPackage()
     ));
   }
 }

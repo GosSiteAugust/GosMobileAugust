@@ -16,7 +16,6 @@ class Images{
         });
         return formData
     }
-    //https://gosserverark-production.up.railway.app
     async sendImages(formData){
         console.log("send")
         try {

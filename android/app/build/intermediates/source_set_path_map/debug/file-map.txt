@@ -57,4 +57,3 @@ ru.rostell.app-packaged_res-55 D:\Porgramming\Gos1\GosMobileArk\node_modules\rea
 ru.rostell.app-packaged_res-56 D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-splash-screen\android\build\intermediates\packaged_res\debug
 ru.rostell.app-packaged_res-57 D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-svg\android\build\intermediates\packaged_res\debug
 ru.rostell.app-packaged_res-58 D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\packaged_res\debug
-ru.rostell.app-packaged_res-59 D:\Porgramming\Gos1\GosMobileArk\node_modules\rn-fetch-blob\android\build\intermediates\packaged_res\debug

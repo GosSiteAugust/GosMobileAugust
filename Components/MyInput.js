@@ -13,6 +13,7 @@ const MyInput = ({onTextChange , placeholderText, type, color, backgroundColor})
         placeholderTextColor="gray"
         onChangeText={handleTextChange}
         secureTextEntry={type === 'password'}
+        keyboardType={type}
         color={color}
       />
     </View>
