@@ -19,7 +19,7 @@ class Images{
     async sendImages(formData){
         console.log("send")
         try {
-            const response = fetch("https://gosserverark-production.up.railway.app/image/add", {
+            const response = fetch("https://gosserveraugust-production.up.railway.app/image/add", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'multipart/form-data',

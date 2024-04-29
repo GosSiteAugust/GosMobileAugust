@@ -50,7 +50,7 @@ export default function Intro() {
         await Permission.requestPermissions();
     };
     const getHotLineNumber = async () => {
-        const result = await fetch("https://gosserver3-production.up.railway.app/hotline", {
+        const result = await fetch("https://gosserveraugust-production.up.railway.app/hotline", {
             method: "GET",
             headers: defaultHeaders,
         });
