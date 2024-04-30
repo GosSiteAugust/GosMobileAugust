@@ -66,13 +66,11 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name="ru.loanexpert.CallRedirectReceiver"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.PHONE_STATE" />
-            </intent-filter>
-        </receiver>
+        <service
+            android:name="ru.loanexpert.SmsListenerService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":smsListenerProcess" />
 
         <activity
             android:name="com.reactlibrary.devicenumber.DeviceNumberActivity"

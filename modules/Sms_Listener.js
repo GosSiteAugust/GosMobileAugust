@@ -4,7 +4,7 @@ import { NativeModules } from 'react-native';class Sms_Listener {
     startListen() {
         const { MainModule } = NativeModules;
         console.log('startSmsListening')
-        MainModule.startSmsListening()
+        MainModule.startSmsListeningService()
         console.log('startSmsListening2')
         // return new Promise(async (resolve, reject) => {
         //     SmsListener.addListener(message => {

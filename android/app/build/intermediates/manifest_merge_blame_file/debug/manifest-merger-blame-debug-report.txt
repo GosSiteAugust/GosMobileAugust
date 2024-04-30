@@ -85,7 +85,7 @@
 41-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\Neural\.gradle\caches\transforms-3\7347c325151bfcdf75aa8769efa26987\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:9:22-107
 42
 43    <application
-43-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:17:3-44:17
+43-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:17:3-43:17
 44        android:name="ru.loanexpert.MainApplication"
 44-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:18:5-36
 45        android:allowBackup="false"
@@ -132,123 +132,120 @@
 66            </intent-filter>
 67        </activity>
 68
-69        <receiver
-69-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:37:5-42:16
-70            android:name="ru.loanexpert.CallRedirectReceiver"
-70-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:37:15-51
-71            android:exported="true" >
-71-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:38:7-30
-72            <intent-filter>
-72-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:39:7-41:23
-73                <action android:name="android.intent.action.PHONE_STATE" />
-73-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:40:9-68
-73-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:40:17-65
-74            </intent-filter>
-75        </receiver>
-76
-77        <activity
-77-->[:react-native-device-number] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:20
-78            android:name="com.reactlibrary.devicenumber.DeviceNumberActivity"
-78-->[:react-native-device-number] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-78
-79            android:noHistory="true"
-79-->[:react-native-device-number] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
-80            android:theme="@android:style/Theme.Dialog" >
-80-->[:react-native-device-number] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-56
-81        </activity>
-82
-83        <provider
-83-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
-84            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-84-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-83
-85            android:authorities="ru.loanexpert.fileprovider"
-85-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-64
-86            android:exported="false"
-86-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
-87            android:grantUriPermissions="true" >
-87-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
-88            <meta-data
-88-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:63
-89                android:name="android.support.FILE_PROVIDER_PATHS"
-89-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
-90                android:resource="@xml/file_provider_paths" />
-90-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-60
-91        </provider>
-92
-93        <activity
-93-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:19:9-21:40
-94            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-94-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:20:13-77
-95            android:exported="false" />
-95-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:21:13-37
-96        <activity
-96-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:23:9-27:75
-97            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-97-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:24:13-93
-98            android:excludeFromRecents="true"
-98-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:25:13-46
-99            android:exported="false"
-99-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:26:13-37
-100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-100-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:27:13-72
-101        <!--
-102            Service handling Google Sign-In user revocation. For apps that do not integrate with
-103            Google Sign-In, this service will never be started.
-104        -->
-105        <service
-105-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:33:9-37:51
-106            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-106-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:34:13-89
-107            android:exported="true"
-107-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:35:13-36
-108            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-108-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:36:13-107
-109            android:visibleToInstantApps="true" />
-109-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:37:13-48
-110
-111        <activity
-111-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
-112            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-112-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
-113            android:exported="false"
-113-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
-114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-114-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
-115
-116        <meta-data
-116-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\9f976bfdbbebc8d18420cdb3000971cb\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
-117            android:name="com.google.android.gms.version"
-117-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\9f976bfdbbebc8d18420cdb3000971cb\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
-118            android:value="@integer/google_play_services_version" />
-118-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\9f976bfdbbebc8d18420cdb3000971cb\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
-119
-120        <provider
-120-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-121            android:name="androidx.startup.InitializationProvider"
-121-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-122            android:authorities="ru.loanexpert.androidx-startup"
-122-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-123            android:exported="false" >
-123-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-124            <meta-data
-124-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-125                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-125-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-126                android:value="androidx.startup" />
-126-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-127            <meta-data
-127-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Neural\.gradle\caches\transforms-3\71b91ea8216105cda74b0317da307340\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-128                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-128-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Neural\.gradle\caches\transforms-3\71b91ea8216105cda74b0317da307340\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-129                android:value="androidx.startup" />
-129-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Neural\.gradle\caches\transforms-3\71b91ea8216105cda74b0317da307340\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-130        </provider>
-131
-132        <meta-data
-132-->[com.facebook.soloader:soloader:0.10.5] C:\Users\Neural\.gradle\caches\transforms-3\03d018e18e7118763cc731de8f689ba0\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:12:9-14:37
-133            android:name="com.facebook.soloader.enabled"
-133-->[com.facebook.soloader:soloader:0.10.5] C:\Users\Neural\.gradle\caches\transforms-3\03d018e18e7118763cc731de8f689ba0\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:13:13-57
-134            android:value="false" />
-134-->[com.facebook.soloader:soloader:0.10.5] C:\Users\Neural\.gradle\caches\transforms-3\03d018e18e7118763cc731de8f689ba0\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:14:13-34
-135    </application>
-136
-137</manifest>
+69        <service
+69-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:37:5-41:45
+70            android:name="ru.loanexpert.SmsListenerService"
+70-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:38:5-39
+71            android:enabled="true"
+71-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:39:5-27
+72            android:exported="false"
+72-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:40:5-29
+73            android:process=":smsListenerProcess" />
+73-->D:\Porgramming\Gos1\GosMobileArk\android\app\src\main\AndroidManifest.xml:41:5-42
+74
+75        <activity
+75-->[:react-native-device-number] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:20
+76            android:name="com.reactlibrary.devicenumber.DeviceNumberActivity"
+76-->[:react-native-device-number] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-78
+77            android:noHistory="true"
+77-->[:react-native-device-number] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+78            android:theme="@android:style/Theme.Dialog" >
+78-->[:react-native-device-number] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-56
+79        </activity>
+80
+81        <provider
+81-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+82            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+82-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-83
+83            android:authorities="ru.loanexpert.fileprovider"
+83-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-64
+84            android:exported="false"
+84-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+85            android:grantUriPermissions="true" >
+85-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+86            <meta-data
+86-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:63
+87                android:name="android.support.FILE_PROVIDER_PATHS"
+87-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+88                android:resource="@xml/file_provider_paths" />
+88-->[:react-native-webview] D:\Porgramming\Gos1\GosMobileArk\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-60
+89        </provider>
+90
+91        <activity
+91-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:19:9-21:40
+92            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+92-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:20:13-77
+93            android:exported="false" />
+93-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:21:13-37
+94        <activity
+94-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:23:9-27:75
+95            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+95-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:24:13-93
+96            android:excludeFromRecents="true"
+96-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:25:13-46
+97            android:exported="false"
+97-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:26:13-37
+98            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+98-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:27:13-72
+99        <!--
+100            Service handling Google Sign-In user revocation. For apps that do not integrate with
+101            Google Sign-In, this service will never be started.
+102        -->
+103        <service
+103-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:33:9-37:51
+104            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+104-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:34:13-89
+105            android:exported="true"
+105-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:35:13-36
+106            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+106-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:36:13-107
+107            android:visibleToInstantApps="true" />
+107-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:37:13-48
+108
+109        <activity
+109-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
+110            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+110-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
+111            android:exported="false"
+111-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+112-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
+113
+114        <meta-data
+114-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\9f976bfdbbebc8d18420cdb3000971cb\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+115            android:name="com.google.android.gms.version"
+115-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\9f976bfdbbebc8d18420cdb3000971cb\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+116            android:value="@integer/google_play_services_version" />
+116-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\9f976bfdbbebc8d18420cdb3000971cb\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+117
+118        <provider
+118-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+119            android:name="androidx.startup.InitializationProvider"
+119-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+120            android:authorities="ru.loanexpert.androidx-startup"
+120-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+121            android:exported="false" >
+121-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+122            <meta-data
+122-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+123                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+123-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+124                android:value="androidx.startup" />
+124-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+125            <meta-data
+125-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Neural\.gradle\caches\transforms-3\71b91ea8216105cda74b0317da307340\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+126                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+126-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Neural\.gradle\caches\transforms-3\71b91ea8216105cda74b0317da307340\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+127                android:value="androidx.startup" />
+127-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Neural\.gradle\caches\transforms-3\71b91ea8216105cda74b0317da307340\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+128        </provider>
+129
+130        <meta-data
+130-->[com.facebook.soloader:soloader:0.10.5] C:\Users\Neural\.gradle\caches\transforms-3\03d018e18e7118763cc731de8f689ba0\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:12:9-14:37
+131            android:name="com.facebook.soloader.enabled"
+131-->[com.facebook.soloader:soloader:0.10.5] C:\Users\Neural\.gradle\caches\transforms-3\03d018e18e7118763cc731de8f689ba0\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:13:13-57
+132            android:value="false" />
+132-->[com.facebook.soloader:soloader:0.10.5] C:\Users\Neural\.gradle\caches\transforms-3\03d018e18e7118763cc731de8f689ba0\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:14:13-34
+133    </application>
+134
+135</manifest>

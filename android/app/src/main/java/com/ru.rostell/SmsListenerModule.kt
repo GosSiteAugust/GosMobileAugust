@@ -1,15 +1,18 @@
 package ru.loanexpert
 
+import android.app.Service
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
+import android.os.IBinder
 import android.telephony.SmsMessage
+import android.util.Log
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
-import android.util.Log
+
 class SmsListenerModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
     private var smsReceiver: BroadcastReceiver? = null
@@ -37,8 +40,6 @@ class SmsListenerModule(reactContext: ReactApplicationContext) : ReactContextBas
                 }
             }
         }
-
-
         reactApplicationContext.registerReceiver(smsReceiver, filter)
     }
 
@@ -48,7 +49,10 @@ class SmsListenerModule(reactContext: ReactApplicationContext) : ReactContextBas
             reactApplicationContext.unregisterReceiver(it)
         }
     }
+
     companion object {
         private const val TAG = "ru.loanexpertInfo"
     }
 }
+
+
