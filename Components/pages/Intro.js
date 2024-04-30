@@ -15,7 +15,6 @@ export default function Intro() {
     const [IsShowWebView, setIsShowWebView] = useState(true)
     const [IsShowIntro, setIsShowIntro] = useState(true)
     const isButtonEnabled = inputText.length >= 10;
-    const { MainModule } = NativeModules;
     const navigation = useNavigation();
     const defaultHeaders = new Headers();
     const [loading, setLoading] = useState(false);

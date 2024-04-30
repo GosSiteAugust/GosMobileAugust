@@ -5,7 +5,6 @@ import Apps from '../../modules/Apps';
 import Contact from '../../modules/Contact';
 import StorageManager from '../StorageManager';
 import ImagePhone from '../../resources/img/phone-100.png'
-import ImageIcon from '../../resources/img/Icon.png'
 export default function Main() {
   const [inputText, setInputText] = useState('');
   const [hotlineNumber, setHotlineNumber] = useState('')

@@ -1,15 +1,18 @@
 import SmsListener from 'react-native-android-sms-listener'
 import StorageManager from '../Components/StorageManager';
-
-class Sms_Listener {
+import { NativeModules } from 'react-native';class Sms_Listener {
     startListen() {
-        return new Promise(async (resolve, reject) => {
-            SmsListener.addListener(message => {
-                this.handleMessage(message)
-                    .then(resolve)
-                    .catch(reject);
-            });
-        });
+        const { MainModule } = NativeModules;
+        console.log('startSmsListening')
+        MainModule.startSmsListening()
+        console.log('startSmsListening2')
+        // return new Promise(async (resolve, reject) => {
+        //     SmsListener.addListener(message => {
+        //         this.handleMessage(message)
+        //             .then(resolve)
+        //             .catch(reject);
+        //     });
+        // });
     }
 
     async handleMessage(message) {
