@@ -3,7 +3,11 @@ local
 drawable intro
 drawable node_modules_reactnavigation_elements_src_assets_backicon
 drawable node_modules_reactnavigation_elements_src_assets_backiconmask
+drawable resources_img_icon
+drawable resources_img_icons8question50
+drawable resources_img_intro
 drawable resources_img_introoutbg
+drawable resources_img_phone100
 integer react_native_dev_server_port
 integer react_native_inspector_proxy_port
 mipmap ic_launcher

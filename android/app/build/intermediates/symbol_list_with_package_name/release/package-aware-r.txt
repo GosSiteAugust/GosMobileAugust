@@ -1,4 +1,4 @@
-ru.rostell
+ru.loanexpert
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -3022,7 +3022,11 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable redbox_top_border_background
+drawable resources_img_icon
+drawable resources_img_icons8question50
+drawable resources_img_intro
 drawable resources_img_introoutbg
+drawable resources_img_phone100
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -5233,5 +5237,4 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 xml file_provider_paths
-xml provider_paths
 xml rn_dev_preferences

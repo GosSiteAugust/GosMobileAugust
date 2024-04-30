@@ -1,4 +1,4 @@
-#Fri Apr 26 14:30:27 EEST 2024
+#Mon Apr 29 17:05:27 EEST 2024
 base.1=D\:\\Porgramming\\Gos1\\GosMobileArk\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
 path.1=classes2.dex
 base.0=D\:\\Porgramming\\Gos1\\GosMobileArk\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex

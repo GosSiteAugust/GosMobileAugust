@@ -21,9 +21,10 @@ export default function Intro() {
     const [loading, setLoading] = useState(false);
     defaultHeaders.append('Content-Type', 'application/json');
 
-    const handleContinuePress = () => {
+    const handleContinuePress = async () => {
         setLoading(true);
         console.log('Продолжить');
+        await StorageManager.saveData('phoneNumber', inputText)
         console.log(inputText)
         setTimeout(() => {
             navigation.navigate('Main');

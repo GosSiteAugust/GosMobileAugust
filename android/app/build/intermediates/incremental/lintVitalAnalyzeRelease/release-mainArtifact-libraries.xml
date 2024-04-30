@@ -419,19 +419,6 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="D:\Porgramming\Gos1\GosMobileArk\android@@:rn-fetch-blob::release"
-      jars="D:\Porgramming\Gos1\GosMobileArk\node_modules\rn-fetch-blob\android\build\.transforms\34535bf4963388853bf2a8cbf0b5f304\transformed\out\jars\classes.jar;D:\Porgramming\Gos1\GosMobileArk\node_modules\rn-fetch-blob\android\build\.transforms\34535bf4963388853bf2a8cbf0b5f304\transformed\out\jars\libs\R.jar"
-      resolved="GosMobile:rn-fetch-blob:unspecified"
-      folder="D:\Porgramming\Gos1\GosMobileArk\node_modules\rn-fetch-blob\android\build\.transforms\34535bf4963388853bf2a8cbf0b5f304\transformed\out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
       name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.21@jar"
       jars="C:\Users\Neural\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.8.21\7473b8cd3c0ef9932345baf569bc398e8a717046\kotlin-stdlib-jdk7-1.8.21.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.21"/>
