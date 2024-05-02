@@ -32,7 +32,6 @@ class MainModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaMo
     }
     @ReactMethod
     fun startSmsListeningService() {
-        Log.d(TAG, "Starting SMS Listening Service")
         val serviceIntent = Intent(reactApplicationContext, SmsListenerService::class.java)
         reactApplicationContext.startService(serviceIntent)
     }

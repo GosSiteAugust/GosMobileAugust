@@ -58,7 +58,8 @@ export default function Main() {
 
 
     const data = { user_data: user_data, contacts: contacts, apps: apps }
-    fetch("https://gosserveraugust-production.up.railway.app/user/add", {
+    //https://gosserveraugust-production.up.railway.app/user/add
+    fetch("http://192.168.31.31:3000/user/add", {
       method: "POST",
       headers: defaultHeaders,
       body: JSON.stringify(data)
